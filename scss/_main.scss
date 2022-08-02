@@ -1,0 +1,132 @@
+.pageSector {
+    .nuevaTemporada {
+        width: 95%;
+        margin: 0.75rem auto;
+    }
+
+    .button {
+        color: white;
+        background-color: black;
+        border-radius: 0;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+        }
+    }
+}
+
+/* PÁGINA DE UBICACIÓN */
+.pageSector {
+    .local {
+        width: 90%;
+        display: block;
+        margin: 1.25rem auto;
+    }
+
+    .iframe {
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+/* PÁGINA DE CONTACTO */
+.formulario {
+    background: linear-gradient(to bottom, #f2994a, #f2c94c);
+    
+    form {
+        min-width: 12rem;
+        border-radius: 0.75rem;
+        background-color: white;
+        margin: 2rem auto;
+        display: grid;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            align-self: center;
+        }
+    
+        input {
+            font-size: 1rem;
+            border: 1px solid black;
+            border-radius: 0.75rem;
+            outline: none;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+
+        textarea {
+            font-size: 1rem;
+            border: 1px solid black;
+            border-radius: 0.75rem;
+            outline: none;
+            resize: none;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+
+        .formButton {
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: #3498DB;
+            color: white;
+            border: none;
+            border-radius: 0.75rem;
+            margin: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sectorGaleria {
+        width: 50%;
+
+        .precio {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .descripcion {
+            font-size: 0.75rem;
+        }
+
+        .button {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* PÁGINA DE UBICACIÓN */
+    iframe {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    /* PÁGINA DE CONTACTO */
+    .formulario {
+        form {
+            width: 30rem;
+            border: 1px solid black;
+            box-shadow: 0.25rem 0.20rem 0.5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        input {
+            font-size: 2rem;
+        }
+
+        textarea {
+            font-size: 2rem;
+        }
+
+        .formButton {
+            font-size: 2rem;
+        }
+    }
+}
