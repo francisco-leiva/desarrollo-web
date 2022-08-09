@@ -1,28 +1,31 @@
+/* MAIN */
+/* INICIO, MUJER Y HOMBRE */
 .pageSector {
     .nuevaTemporada {
         width: 95%;
         margin: 0.75rem auto;
     }
 
-    .button {
-        color: white;
-        background-color: black;
-        border-radius: 0;
+    .sectorGaleria {
+        .button {
+            color: white;
+            background-color: black;
+            border-radius: 0;
 
-        &:hover {
-            background-color: white;
-            color: black;
-            transition: 0.5s;
+            &:hover {
+                background-color: white;
+                color: black;
+                transition: 0.5s;
+            }
         }
-    }
+    } 
 }
 
 /* PÁGINA DE UBICACIÓN */
 .pageSector {
     .local {
-        width: 90%;
+        @extend .nuevaTemporada;
         display: block;
-        margin: 1.25rem auto;
     }
 
     .iframe {
@@ -47,24 +50,13 @@
             font-size: 1.5rem;
             align-self: center;
         }
-    
+
         input {
-            font-size: 1rem;
-            border: 1px solid black;
-            border-radius: 0.75rem;
-            outline: none;
-            padding: 0.5rem;
-            margin: 0.5rem;
+            @include formInput();
         }
 
         textarea {
-            font-size: 1rem;
-            border: 1px solid black;
-            border-radius: 0.75rem;
-            outline: none;
-            resize: none;
-            padding: 0.5rem;
-            margin: 0.5rem;
+            @include formInput();
         }
 
         .formButton {
@@ -80,6 +72,8 @@
 }
 
 @media screen and (max-width: 576px) {
+    /* MAIN */
+    /* INICIO, MUJER Y HOMBRE */
     .sectorGaleria {
         width: 50%;
 
@@ -99,6 +93,7 @@
 }
 
 @media screen and (min-width: 600px) {
+    /* MAIN */
     /* PÁGINA DE UBICACIÓN */
     iframe {
         width: 30rem;

@@ -1,3 +1,4 @@
+/* FOOTER */
 footer {
     background-color: $background;
 
@@ -6,7 +7,7 @@ footer {
         padding: 0.5rem 0;
 
         h3 {
-            font-size: 1rem;
+            font-size: map-get($map: $footer, $key: titulo);
         }
 
         p {
@@ -14,22 +15,21 @@ footer {
         }
 
         a {
-            font-size: 0.75rem;
+            font-size: map-get($map: $footer, $key: texto);
             text-decoration: none;
             color: black;
         }
     }
 
     .contacto {
-        margin: 0 0.5rem;
-        padding: 0.5rem 0;
+        @extend .socialMedia;
 
         h3 {
-            font-size: 1rem;
+            font-size: map-get($map: $footer, $key: titulo);
         }
 
         p {
-            font-size: 0.75rem;
+            font-size: map-get($map: $footer, $key: texto);
             margin: 0;
         }
     }
@@ -40,6 +40,7 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+    /* FOOTER */
     footer {
         display: grid;
         grid-template-columns: 35% 20% auto;

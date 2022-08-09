@@ -1,0 +1,3 @@
+Le sumé al SEO con las siguientes características:
+-Le agregué a todos mis html la etiqueta meta description, con una breve descripción del contenido de las páginas.
+-En las páginas de inicio, hombre y mujer cambié las etiquetas h5 de las cards de bootstrap por etiquetas h2.
