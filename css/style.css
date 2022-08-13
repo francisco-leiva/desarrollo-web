@@ -21,62 +21,79 @@ header {
 
 /* MAIN */
 /* INICIO, MUJER Y HOMBRE */
-.pageSector .nuevaTemporada, .pageSector .local {
+.pageSector .sectorBanner {
   width: 95%;
   margin: 0.75rem auto; }
 
-.pageSector .sectorGaleria .button {
-  color: white;
-  background-color: black;
-  border-radius: 0; }
-  .pageSector .sectorGaleria .button:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s; }
-
-/* PÁGINA DE UBICACIÓN */
-.pageSector .local {
-  display: block; }
-
-.pageSector .iframe {
-  text-align: center;
-  margin: 1rem; }
+.pageSector .sectorGaleria {
+  text-align: center; }
+  .pageSector .sectorGaleria .button {
+    color: white;
+    background-color: black;
+    border-radius: 0; }
+    .pageSector .sectorGaleria .button:hover {
+      background-color: white;
+      color: black;
+      transition: 0.5s; }
 
 /* PÁGINA DE CONTACTO */
-.formulario {
-  background: linear-gradient(to bottom, #f2994a, #f2c94c); }
-  .formulario form {
-    min-width: 12rem;
+.pageContact form {
+  background-color: #D0D3D4;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column; }
+  .pageContact form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    align-self: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0; }
+  .pageContact form input {
+    font-size: 1rem;
+    border: 1px solid black;
     border-radius: 0.75rem;
-    background-color: white;
-    margin: 2rem auto;
-    display: grid; }
-    .formulario form h2 {
-      text-align: center;
-      font-size: 1.5rem;
-      align-self: center; }
-    .formulario form input {
-      font-size: 1rem;
-      border: 1px solid black;
-      border-radius: 0.75rem;
-      outline: none;
-      padding: 0.5rem;
-      margin: 0.5rem; }
-    .formulario form textarea {
-      font-size: 1rem;
-      border: 1px solid black;
-      border-radius: 0.75rem;
-      outline: none;
-      padding: 0.5rem;
-      margin: 0.5rem; }
-    .formulario form .formButton {
-      font-family: inherit;
-      font-size: 1rem;
-      background-color: #3498DB;
-      color: white;
-      border: none;
-      border-radius: 0.75rem;
-      margin: 0.5rem; }
+    outline: none;
+    padding: 0.5rem;
+    margin: 0.5rem; }
+  .pageContact form textarea {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0.75rem;
+    outline: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    resize: none; }
+  .pageContact form .formButton {
+    font-family: inherit;
+    width: 5rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0;
+    margin: 0 auto 0.5rem;
+    padding: 0.25rem; }
+    .pageContact form .formButton:hover {
+      background-color: white;
+      color: black;
+      transition: 0.5s; }
+
+.pageContact .map {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #D0D3D4;
+  text-align: center;
+  margin-bottom: 2rem; }
+  .pageContact .map iframe {
+    order: 3;
+    margin: 0 auto 0.25rem; }
+  .pageContact .map .mapText {
+    margin: 0.5rem; }
+    .pageContact .map .mapText p {
+      margin: 0; }
 
 @media screen and (max-width: 576px) {
   /* MAIN */
@@ -93,23 +110,39 @@ header {
 
 @media screen and (min-width: 600px) {
   /* MAIN */
-  /* PÁGINA DE UBICACIÓN */
-  iframe {
-    width: 30rem;
-    height: 30rem; }
+  /* HOMBRE, MUJER Y NIÑOS */
+  .sectorGaleria .descripcion {
+    font-size: 1.5rem; }
   /* PÁGINA DE CONTACTO */
-  .formulario form {
+  .pageContact form {
     width: 30rem;
     border: 1px solid black;
+    border-radius: 0.75rem;
     box-shadow: 0.25rem 0.20rem 0.5rem; }
-  .formulario h2 {
-    font-size: 3rem; }
-  .formulario input {
-    font-size: 2rem; }
-  .formulario textarea {
-    font-size: 2rem; }
-  .formulario .formButton {
-    font-size: 2rem; } }
+    .pageContact form h2 {
+      font-size: 2rem; }
+    .pageContact form input, .pageContact form textarea {
+      font-size: 1.5rem; }
+    .pageContact form .formButton {
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  /* PÁGINA DE CONTACTO */
+  .pageContact .map {
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 25rem;
+    border-radius: 0.5rem; }
+    .pageContact .map iframe {
+      align-self: center;
+      order: -1;
+      margin: 0 0.75rem;
+      height: 90%;
+      border-radius: 0.5rem; }
+    .pageContact .map .mapText {
+      align-self: center;
+      width: 70%; } }
 
 /* FOOTER */
 footer {
