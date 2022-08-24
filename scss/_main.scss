@@ -1,5 +1,5 @@
 /* MAIN */
-/* INICIO, MUJER Y HOMBRE */
+/* PÁGINAS DE INICIO, MUJER, HOMBRE Y NIÑOS */
 .pageSector {
     .sectorBanner {
         width: 95%;
@@ -9,7 +9,17 @@
     .sectorGaleria {
         text-align: center;
 
+        .precio {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .descripcion {
+            font-size: 0.8rem;
+        }
+
         .button {
+            font-size: 0.75rem;
             color: white;
             background-color: black;
             border-radius: 0;
@@ -94,32 +104,17 @@
 
 @media screen and (max-width: 576px) {
     /* MAIN */
-    /* INICIO, MUJER Y HOMBRE */
+    /* PÁGINAS DE INICIO, MUJER, HOMBRE Y NIÑOS */
     .sectorGaleria {
         width: 50%;
-
-        .precio {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        .descripcion {
-            font-size: 0.75rem;
-        }
-
-        .button {
-            font-size: 0.75rem;
-        }
     }
 }
 
 @media screen and (min-width: 600px) {
     /* MAIN */
-    /* HOMBRE, MUJER Y NIÑOS */
+    /* PÁGINAS DE INICIO, MUJER, HOMBRE Y NIÑOS */
     .sectorGaleria {
-        .descripcion {
-            font-size: 1.5rem;
-        }
+        width: 25%;
     }
 
     /* PÁGINA DE CONTACTO */
